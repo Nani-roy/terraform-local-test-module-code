@@ -1,6 +1,6 @@
 
 module "ec2-instance" {
-  source                 = "terraform-aws-modules/ec2-instance/aws"
+  source                 = "https://github.com/Nani-roy/terraform_test.git ?ref=v1.1.1"
   subnet_id              = aws_subnet.my_subnet.id
   key_name               = "user1"
   vpc_security_group_ids = [aws_security_group.main.name]
