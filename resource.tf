@@ -6,7 +6,7 @@ resource "aws_instance" "example" {
 
 resource "aws_subnet" "my_subnet" {
   vpc_id            = data.aws_vpc.main.id
-  cidr_block        = "172.16.10.0/24"
+  cidr_block        = "172.16.32.0/20"
   availability_zone = "ap-south-1a"
 
   tags = {
